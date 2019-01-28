@@ -79,10 +79,7 @@ public class MainActivity extends AppCompatActivity {
                     public void onSuccess(Token token) {
                         // Send token to your server
 
-                        Toast.makeText(getApplicationContext(),
-                                "Token Sent To Server",
-                                Toast.LENGTH_LONG
-                        ).show();
+                        Toast.makeText(getApplicationContext(), "Token created: " + token.getId(), Toast.LENGTH_LONG).show();
                     }
                     public void onError(Exception error) {
                         // Show localized error message
@@ -93,7 +90,6 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
-        text.setText(stripe.toString());
     }
 
 
