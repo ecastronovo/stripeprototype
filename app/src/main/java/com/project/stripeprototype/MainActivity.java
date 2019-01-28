@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     TextView Month;
     TextView Year;
     TextView CVC;
+    TextView text;
 
 
 
@@ -37,6 +38,7 @@ public class MainActivity extends AppCompatActivity {
         Year = (TextView) findViewById(R.id.year);
         CVC = (TextView) findViewById(R.id.cvc);
 
+        text = (TextView) findViewById(R.id.text);
 
     }
     public void testFunction() {
@@ -91,6 +93,7 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
         );
+        text.setText(stripe.toString());
     }
 
 

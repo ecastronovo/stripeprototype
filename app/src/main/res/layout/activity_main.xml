@@ -97,10 +97,20 @@ tools:context="com.example.theodhor.stripeandroid.PayActivity">
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
         android:onClick="submitCard" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:textSize="50dp" />
+
+
 
 </RelativeLayout>
 
+
 </RelativeLayout>
+
 
     </LinearLayout>
 
